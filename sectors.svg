@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <a href="#sector1-content">
+    <path id="sector1" d="M50,50 L50,0 A50,50 0 0,1 100,50 Z" fill="#f00"></path>
+  </a>
+  <a href="#sector2-content">
+    <path id="sector2" d="M50,50 L100,50 A50,50 0 0,1 50,100 Z" fill="#0f0"></path>
+  </a>
+  <a href="#sector3-content">
+    <path id="sector3" d="M50,50 L0,50 A50,50 0 0,1 50,0 Z" fill="#00f"></path>
+  </a>
+  <a href="#sector4-content">
+    <path id="sector4" d="M50,50 L0,50 A50,50 0 0,0 50,100 Z" fill="#ff0"></path>
+  </a>
+</svg>
