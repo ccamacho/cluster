@@ -1,0 +1,65 @@
+
+<svg class="svg-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+
+  <style>
+    .sector-content {
+      display: none;
+    }
+    .sector-content.active {
+      display: block;
+    }
+  </style>
+  <script type="text/ecmascript">
+    <![CDATA[
+      function showSectorContent(id) {
+        var contents = document.querySelectorAll('.sector-content');
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].setAttribute('class', 'sector-content');
+        }
+        var content = document.getElementById(id);
+        if (content) {
+          content.setAttribute('class', 'sector-content active');
+        }
+      }
+    ]]>
+  </script>
+  <a xlink:href="#sector1-content">
+    <path id="sector1" d="M50,50 L50,0 A50,50 0 0,1 100,50 Z" fill="#f00" onmouseover="showSectorContent('sector1-content')"></path>
+  </a>
+  <a xlink:href="#sector2-content">
+    <path id="sector2" d="M50,50 L100,50 A50,50 0 0,1 50,100 Z" fill="#0f0" onmouseover="showSectorContent('sector2-content')"></path>
+  </a>
+  <a xlink:href="#sector3-content">
+    <path id="sector3" d="M50,50 L0,50 A50,50 0 0,1 50,0 Z" fill="#00f" onmouseover="showSectorContent('sector3-content')"></path>
+  </a>
+  <a xlink:href="#sector4-content">
+    <path id="sector4" d="M50,50 L0,50 A50,50 0 0,0 50,100 Z" fill="#ff0" onmouseover="showSectorContent('sector4-content')"></path>
+  </a>
+
+  <!-- Your sector content here -->
+  <g id="default-content" class="sector-content">
+    <!-- Default content -->
+    <text x="10" y="20">No Sector Selected</text>
+    <text x="10" y="40">Select a sector to view its information.</text>
+  </g>
+  <g id="sector1-content" class="sector-content">
+    <!-- Sector 1 content -->
+    <text x="10" y="20">Sector 1</text>
+    <text x="10" y="40">Server A | 8GB | Linux | Active | 50GB | 1 Gbps</text>
+  </g>
+  <g id="sector2-content" class="sector-content">
+    <!-- Sector 2 content -->
+    <text x="10" y="20">Sector 2</text>
+    <text x="10" y="40">Server B | 16GB | Windows | Inactive | 100GB | 10 Gbps</text>
+  </g>
+  <g id="sector3-content" class="sector-content">
+    <!-- Sector 3 content -->
+    <text x="10" y="20">Sector 3</text>
+    <text x="10" y="40">Server C | 32GB | Ubuntu | Active | 200GB | 1 Gbps</text>
+  </g>
+  <g id="sector4-content" class="sector-content">
+    <!-- Sector 4 content -->
+    <text x="10" y="20">Sector 4</text>
+    <text x="10" y="40">Server D | 64GB | CentOS | Active | 500GB | 1 Gbps</text>
+  </g>
+</svg>

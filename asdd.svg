@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+  <!-- Define clickable areas for each sector -->
+  <rect x="10" y="10" width="140" height="140" fill="#ccc">
+    <title>Sector 1</title>
+    <!-- Define table content for Sector 1 -->
+    <desc>
+      <![CDATA[
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>RAM</th>
+            <th>OS</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Server A</td>
+            <td>8GB</td>
+            <td>Linux</td>
+            <td>Active</td>
+          </tr>
+        </table>
+      ]]>
+    </desc>
+  </rect>
+  <rect x="150" y="10" width="140" height="140" fill="#ccc">
+    <title>Sector 2</title>
+    <!-- Define table content for Sector 2 -->
+    <desc>
+      <![CDATA[
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>RAM</th>
+            <th>OS</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Server B</td>
+            <td>16GB</td>
+            <td>Windows</td>
+            <td>Inactive</td>
+          </tr>
+        </table>
+      ]]>
+    </desc>
+  </rect>
+  <rect x="10" y="150" width="140" height="140" fill="#ccc">
+    <title>Sector 3</title>
+    <!-- Define table content for Sector 3 -->
+    <desc>
+      <![CDATA[
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>RAM</th>
+            <th>OS</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Server C</td>
+            <td>32GB</td>
+            <td>Ubuntu</td>
+            <td>Active</td>
+          </tr>
+        </table>
+      ]]>
+    </desc>
+  </rect>
+  <rect x="150" y="150" width="140" height="140" fill="#ccc">
+    <title>Sector 4</title>
+    <!-- Define table content for Sector 4 -->
+    <desc>
+      <![CDATA[
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>RAM</th>
+            <th>OS</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Server D</td>
+            <td>64GB</td>
+            <td>CentOS</td>
+            <td>Active</td>
+          </tr>
+        </table>
+      ]]>
+    </desc>
+  </rect>
+</svg>

@@ -1,0 +1,108 @@
+
+<svg class="svg-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+    <style>
+        .sector-content {
+            display: none;
+        }
+
+        .sector:hover + .sector-content {
+            display: block;
+        }
+    </style>
+
+    <!-- Sector 1 -->
+    <path id="sector1" class="sector" d="M200,300 L300,100 A100,100 0 0,1 400,300 Z" fill="#f00"></path>
+    <g class="sector-content" transform="translate(100, 400)">
+        <text x="10" y="20">Sector 1 Content</text>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Ram</th>
+                <th>OS</th>
+                <th>Status</th>
+                <th>Free</th>
+                <th>NIC</th>
+            </tr>
+            <tr>
+                <td>Server A</td>
+                <td>8GB</td>
+                <td>Linux</td>
+                <td>Active</td>
+                <td>50GB</td>
+                <td>1 Gbps</td>
+            </tr>
+        </table>
+    </g>
+
+    <!-- Sector 2 -->
+    <path id="sector2" class="sector" d="M600,300 L700,100 A100,100 0 0,1 800,300 Z" fill="#0f0"></path>
+    <g class="sector-content" transform="translate(500, 400)">
+        <text x="10" y="20">Sector 2 Content</text>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Ram</th>
+                <th>OS</th>
+                <th>Status</th>
+                <th>Free</th>
+                <th>NIC</th>
+            </tr>
+            <tr>
+                <td>Server B</td>
+                <td>16GB</td>
+                <td>Windows</td>
+                <td>Inactive</td>
+                <td>100GB</td>
+                <td>10 Gbps</td>
+            </tr>
+        </table>
+    </g>
+
+    <!-- Sector 3 -->
+    <path id="sector3" class="sector" d="M200,300 L100,500 A100,100 0 0,1 300,500 Z" fill="#00f"></path>
+    <g class="sector-content" transform="translate(100, 100)">
+        <text x="10" y="20">Sector 3 Content</text>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Ram</th>
+                <th>OS</th>
+                <th>Status</th>
+                <th>Free</th>
+                <th>NIC</th>
+            </tr>
+            <tr>
+                <td>Server C</td>
+                <td>32GB</td>
+                <td>Ubuntu</td>
+                <td>Active</td>
+                <td>200GB</td>
+                <td>1 Gbps</td>
+            </tr>
+        </table>
+    </g>
+
+    <!-- Sector 4 -->
+    <path id="sector4" class="sector" d="M600,300 L500,500 A100,100 0 0,1 700,500 Z" fill="#ff0"></path>
+    <g class="sector-content" transform="translate(500, 100)">
+        <text x="10" y="20">Sector 4 Content</text>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Ram</th>
+                <th>OS</th>
+                <th>Status</th>
+                <th>Free</th>
+                <th>NIC</th>
+            </tr>
+            <tr>
+                <td>Server D</td>
+                <td>64GB</td>
+                <td>CentOS</td>
+                <td>Active</td>
+                <td>500GB</td>
+                <td>1 Gbps</td>
+            </tr>
+        </table>
+    </g>
+</svg>

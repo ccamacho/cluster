@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Rack -->
+  <rect x="50" y="50" width="300" height="300" fill="#ccc" stroke="#000" stroke-width="2" rx="10" />
+
+  <!-- Server 1 - Active -->
+  <rect id="server1" x="100" y="80" width="60" height="40" fill="#0f0" stroke="#000" stroke-width="2">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 130 100" to="360 130 100" dur="5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Server 2 - Inactive -->
+  <rect id="server2" x="100" y="140" width="60" height="40" fill="#f00" stroke="#000" stroke-width="2">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 130 160" to="360 130 160" dur="5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Server 3 - Maintenance -->
+  <rect id="server3" x="100" y="200" width="60" height="40" fill="#00f" stroke="#000" stroke-width="2">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 130 220" to="360 130 220" dur="5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Labels -->
+  <text x="130" y="110" fill="#000">Server 1</text>
+  <text x="130" y="170" fill="#000">Server 2</text>
+  <text x="130" y="230" fill="#000">Server 3</text>
+
+  <!-- Message -->
+  <text x="200" y="350" fill="#f00" font-size="20" font-weight="bold" opacity="0">
+    This is an important message!
+    <animate attributeName="opacity" dur="1s" repeatCount="indefinite" values="0;1;0" keyTimes="0;0.5;1" />
+  </text>
+</svg>
