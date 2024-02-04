@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVG Sector Selection</title>
+<style>
+.container {
+  display: flex;
+}
+
+.svg-map {
+  width: 50%;
+}
+
+.content {
+  width: 50%;
+}
+
+.sector-content {
+  display: none;
+}
+
+.sector-content:target {
+  display: block;
+}
+
+/* Styling for the SVG */
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Alternate row color */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#default-content {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <svg class="svg-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <a href="#sector1-content">
+      <path id="sector1" d="M50,50 L50,0 A50,50 0 0,1 100,50 Z" fill="#f00"></path>
+    </a>
+    <a href="#sector2-content">
+      <path id="sector2" d="M50,50 L100,50 A50,50 0 0,1 50,100 Z" fill="#0f0"></path>
+    </a>
+    <a href="#sector3-content">
+      <path id="sector3" d="M50,50 L0,50 A50,50 0 0,1 50,0 Z" fill="#00f"></path>
+    </a>
+    <a href="#sector4-content">
+      <path id="sector4" d="M50,50 L0,50 A50,50 0 0,0 50,100 Z" fill="#ff0"></path>
+    </a>
+  </svg>
+
+  <div class="content">
+    <div id="default-content" class="sector-content">
+      <h2>No Sector Selected</h2>
+      <p>Select a sector to view its information.</p>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Ram</th>
+          <th>OS</th>
+          <th>Status</th>
+          <th>Free</th>
+          <th>NIC</th>
+        </tr>
+        <tr>
+          <td>Default Server</td>
+          <td>4GB</td>
+          <td>Linux</td>
+          <td>Inactive</td>
+          <td>50GB</td>
+          <td>100 Mbps</td>
+        </tr>
+      </table>
+    </div>
+    <div id="sector1-content" class="sector-content">
+      <h2>Sector 1</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Ram</th>
+          <th>OS</th>
+          <th>Status</th>
+          <th>Free</th>
+          <th>NIC</th>
+        </tr>
+        <tr>
+          <td>Server A</td>
+          <td>8GB</td>
+          <td>Linux</td>
+          <td>Active</td>
+          <td>50GB</td>
+          <td>1 Gbps</td>
+        </tr>
+      </table>
+    </div>
+    <div id="sector2-content" class="sector-content">
+      <h2>Sector 2</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Ram</th>
+          <th>OS</th>
+          <th>Status</th>
+          <th>Free</th>
+          <th>NIC</th>
+        </tr>
+        <tr>
+          <td>Server B</td>
+          <td>16GB</td>
+          <td>Windows</td>
+          <td>Inactive</td>
+          <td>100GB</td>
+          <td>10 Gbps</td>
+        </tr>
+      </table>
+    </div>
+    <div id="sector3-content" class="sector-content">
+      <h2>Sector 3</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Ram</th>
+          <th>OS</th>
+          <th>Status</th>
+          <th>Free</th>
+          <th>NIC</th>
+        </tr>
+        <tr>
+          <td>Server C</td>
+          <td>32GB</td>
+          <td>Ubuntu</td>
+          <td>Active</td>
+          <td>200GB</td>
+          <td>1 Gbps</td>
+        </tr>
+      </table>
+    </div>
+    <div id="sector4-content" class="sector-content">
+      <h2>Sector 4</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Ram</th>
+          <th>OS</th>
+          <th>Status</th>
+          <th>Free</th>
+          <th>NIC</th>
+        </tr>
+        <tr>
+          <td>Server D</td>
+          <td>64GB</td>
+          <td>CentOS</td>
+          <td>Active</td>
+          <td>500GB</td>
+          <td>1 Gbps</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
